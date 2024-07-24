@@ -2,3 +2,5 @@ python-dotenv
 openai
 rich
 tiktoken
+Flask
+line-bot-sdk

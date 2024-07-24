@@ -10,10 +10,9 @@ Codes and Notes while learning Large Language Model
     - GPT 是一種大型語言模型 (LLM)。
     - 根據輸入的一段文字向量，產生另一段文字向量的結果。輸出結果和輸入是不等長的，且輸出具有隨機性。
     - 常用詞，如 `logit` (隨機性)、`prompt` (輸入)、`completion` (輸出)、`token` (字詞)。
----
 
 ![LLM-powered-agent-anatomy](https://pbs.twimg.com/media/GI9MhXOXsAAJUS4?format=png&name=medium)
-Reference: [E2B.dev, Cloud Runtime for AI Agents](https://x.com/tereza_tizkova/status/1769728977529197018/photo/1)
+Reference: [E2B.dev, Cloud Runtime for AI Agents](https://x.com/tereza_tizkova/status/1769728977529197018/photo/1)<br>
 
 - 以《快思慢想》來比喻，LLM 擅長記憶背誦，但不擅長邏輯推理。
     - [快思慢想 Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) 為 2002 年諾貝爾經濟學獎得主 Daniel Kahneman 於 2011 年出版的暢銷書。
@@ -33,9 +32,7 @@ Reference: [E2B.dev, Cloud Runtime for AI Agents](https://x.com/tereza_tizkova/s
 - 深度學習 = 以類神經網路為架構，對資料做「維度轉換 / 特徵學習 / `Kernel Method`」的演算法
 
 ![](https://www.mdpi.com/information/information-14-00345/article_deploy/html/images/information-14-00345-g001.png)
-Reference: [Artificial Intelligence & Data Science interactions.](https://www.mdpi.com/2078-2489/14/6/345)
-
----
+Reference: [Artificial Intelligence & Data Science interactions.](https://www.mdpi.com/2078-2489/14/6/345)<br>
 
 - AlphaGo v.s. GhatGPT
     - AlphaGo 和 GhatGPT 都是深度學習。
@@ -142,9 +139,6 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
     - [ChatGPT API Tokenizer](https://platform.openai.com/tokenizer)
 
 
-## ChatGPT API + LINE ChatBot
-
-
 ## LangChain Framework
 
 
@@ -152,6 +146,7 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
 - Embeddings
 - 向量資料庫 Vector Database
     - 在本地端做特徵工程建向量資料庫，本身就是一種 RAG 的展現方式。
+
 
 ## GPT Function Calling
 
@@ -163,7 +158,8 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
 
 
 ## 範例程式
-- [01_openai_libs.ipynb](codes/01_openai_libs.ipynb): test OpenAI Python library
-- [02_chatgpt_api.ipynb](codes/02_chatgpt_api.ipynb): integrate ChatGPT API
-- [03_chatgpt_with_linechatbot.ipynb](codes/03_chatgpt_with_linechatbot.ipynb): integrate ChatGPT into Line Chatbot
-- [04_langchain.ipynb](codes/04_langchain.ipynb)
+- [01_openai_libs](codes/01_openai_libs.ipynb): test OpenAI Python library
+- [02_chatgpt_api](codes/02_chatgpt_api.ipynb): integrate ChatGPT API
+- [03_chatgpt_with_chatbot](codes/03_chatgpt_with_chatbot.ipynb): integrate ChatGPT into Chatbot
+- [04_chatgpt_with_search](codes/04_chatgpt_with_search.ipynb): empower ChatGPT with Google Search skill
+- [05_langchain](codes/05_langchain.ipynb)
