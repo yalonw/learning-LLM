@@ -1,6 +1,20 @@
 python-dotenv
-openai
 rich
+
+# for ai model
+openai
 tiktoken
+langchain
+langchain-openai
+langchain-community
+
+# for google search
+requests
+google-api-python-client
+
+# for math
+numexpr
+
+# for chatbot
 Flask
 line-bot-sdk

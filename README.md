@@ -1,6 +1,21 @@
 # learning-LLM
 Codes and Notes while learning Large Language Model
 
+## Getting up and Running locally
+1. Python Version: 3.9.x
+
+1. Create a new Python virtual environment and activate.
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+
+1. Install the dependencies in a virtual environment.
+    ```bash
+    pip3 install --upgrade pip
+    pip3 install -r requirements.txt
+    ```
+
 
 ## LLM & GPT
 - 大型語言模型 Large Language Model, LLM
@@ -162,4 +177,4 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
 - [02_chatgpt_api](codes/02_chatgpt_api.ipynb): integrate ChatGPT API
 - [03_chatgpt_with_chatbot](codes/03_chatgpt_with_chatbot.ipynb): integrate ChatGPT into Chatbot
 - [04_chatgpt_with_search](codes/04_chatgpt_with_search.ipynb): empower ChatGPT with Google Search skill
-- [05_langchain](codes/05_langchain.ipynb)
+- [05_langchain](codes/05_langchain.ipynb): build a LLM app with LangChain framework
