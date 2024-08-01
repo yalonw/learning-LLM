@@ -155,6 +155,19 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
 
 
 ## LangChain Framework
+-  Library, Framework and Platform?
+    - The conclusion is that your code calls the library, but the framework calls your code.
+    ![Framework-vs-Libraries](https://kobaltsolutions.com/wp-content/uploads/2021/02/YOUR-CODE.png)
+    ![architecture-framework-libraries](https://tom.lokhorst.eu/media/architecture-framework-libraries.png)
+    Reference: [Why Libraries are better than Frameworks](https://tom.lokhorst.eu/2010/09/why-libraries-are-better-than-frameworks)
+
+- What is LangChain 🐦🔗?
+    - LangChain 是一個應用框架，旨在簡化使用大型語言模型的應用程式。
+    - LangChain 提供一個標準接口，用於將不同的語言模型（LLM）連接在一起，以及與其他工具和數據源的集成。
+    ![Langchain-Modules](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*WeC1gMrYurp1JAEw.png)
+    Reference: [What is the LangChain Framework? + Example](https://firstfinger.medium.com/what-is-langchain-framework-example-2ece7242127d)
+    ![LangChain-features-at-a-glance](images/LangChain-features-at-a-glance.png)
+    Reference: [Using LangChain for Large Language Model — Powered Applications](https://www.packtpub.com/article-hub/using-langchain-for-large-language-model-powered-applications)
 
 
 ## Embeddings & Vector Database
@@ -178,3 +191,5 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
 - [03_chatgpt_with_chatbot](codes/03_chatgpt_with_chatbot.ipynb): integrate ChatGPT into Chatbot
 - [04_chatgpt_with_search](codes/04_chatgpt_with_search.ipynb): empower ChatGPT with Google Search skill
 - [05_langchain](codes/05_langchain.ipynb): build a LLM app with LangChain framework
+- [06_vector_database](codes/06_vector_database.ipynb)
+- [07_function_calling](codes/07_function_calling.ipynb)

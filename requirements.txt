@@ -1,12 +1,19 @@
+# for env
 python-dotenv
 rich
 
 # for ai model
 openai
-tiktoken
 langchain
 langchain-openai
 langchain-community
+grandalf
+
+# for embedding
+tiktoken
+chromadb
+pysrt
+pypdf
 
 # for google search
 requests
