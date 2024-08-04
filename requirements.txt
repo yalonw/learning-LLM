@@ -7,6 +7,7 @@ openai
 langchain
 langchain-openai
 langchain-community
+langchain-chroma
 grandalf
 
 # for embedding
@@ -14,6 +15,7 @@ tiktoken
 chromadb
 pysrt
 pypdf
+scikit-learn
 
 # for google search
 requests
