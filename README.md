@@ -142,6 +142,8 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
 - LLM 優化技法?
     - Prompt Engineering >> RAG >> Fine-tuning >> Train from Scratch
 
+    Reference: [大模型最佳化：RAG還是微調？](https://cloud.baidu.com/qianfandev/topic/267714)
+
     ![prompt-BRTR](https://chatgptprompt.cc/wp-content/uploads/2023/07/3_640wx_fmtpngampwxfrom5ampwx_lazy1ampwx_co1.png)
     Reference: [ChatGPT 任務指令萬能模板](https://chatgptprompt.cc/666.html)
     ![ChatGPT-Optimization](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F9341931a-53f0-48e1-b026-0f1ad17b457c%2Ff39a3306-6c44-4569-b8fe-28eae07fe4d2%2FUntitled.png?table=block&id=a2375486-e109-4418-b4ab-a31458063d13&t=a2375486-e109-4418-b4ab-a31458063d13&width=912&cache=v2)
@@ -168,21 +170,28 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
     Reference: [What is the LangChain Framework? + Example](https://firstfinger.medium.com/what-is-langchain-framework-example-2ece7242127d)
     ![LangChain-features-at-a-glance](images/LangChain-features-at-a-glance.png)
     Reference: [Using LangChain for Large Language Model — Powered Applications](https://www.packtpub.com/article-hub/using-langchain-for-large-language-model-powered-applications)
+    ![Sequential-Chains](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*AM_RBNFv97Px365uO7nJfw.png)
+    Reference: [LangChain: An overview](https://pub.aimind.so/langchain-all-you-need-to-know-beadc2c93323)
 
 
 ## Embeddings & Vector Database
 - Embeddings
 - 向量資料庫 Vector Database
     - 在本地端做特徵工程建向量資料庫，本身就是一種 RAG 的展現方式。
+    ![Vector-database-Timeline](https://thedataquarry.com/posts/vector-db-1/vector-db-timeline.png)
+    Reference: [Vector databases: What makes each one different?](https://thedataquarry.com/posts/vector-db-1/)
 
 
-## GPT Function Calling
+## Retrieval-Augmented Generation, RAG
+![RAG-flow](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*_9cWD_b19BWc4kdH-M0GOQ.png)
+Reference: [The Agents of AI: Data Analysis with LLMs and LangChain Agents](https://ashukumar27.medium.com/the-agents-of-ai-1402548e9b8c)
 
 
-## RAG + Agents
-- RAG
-    - 檢索增強生成 Retrieval-Augmented Generation
-- Agents
+## Function Calling
+![Function-Calling-flow](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DyzVPezowuNs8UaP0fjgmw.png)
+Reference: [Open AI function calling for Chat Completion](https://medium.com/@chamathka3deemanthi/open-ai-function-calling-for-chat-completion-f9a4b85ff457)
+Reference: [Function Calling: Integrate Your GPT Chatbot With Anything](https://semaphoreci.com/blog/function-calling)
+
 
 
 ## 範例程式
@@ -191,5 +200,5 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
 - [03_chatgpt_with_chatbot](codes/03_chatgpt_with_chatbot.ipynb): integrate ChatGPT into Chatbot
 - [04_chatgpt_with_search](codes/04_chatgpt_with_search.ipynb): empower ChatGPT with Google Search skill
 - [05_langchain](codes/05_langchain.ipynb): build a LLM app with LangChain framework
-- [06_vector_database](codes/06_vector_database.ipynb)
-- [07_function_calling](codes/07_function_calling.ipynb)
+- [06_vector_database](codes/06_vector_database.ipynb): empower ChatGPT with File Search capabilities
+- [07_function_calling](codes/07_function_calling.ipynb): connect LLM to external tools
