@@ -13,7 +13,7 @@ Codes and Notes while learning Large Language Model
 1. Install the dependencies in a virtual environment.
     ```bash
     pip3 install --upgrade pip
-    pip3 install -r requirements.txt
+    pip3 install -r requirements.txt --upgrade
     ```
 
 
@@ -26,8 +26,8 @@ Codes and Notes while learning Large Language Model
     - 根據輸入的一段文字向量，產生另一段文字向量的結果。輸出結果和輸入是不等長的，且輸出具有隨機性。
     - 常用詞，如 `logit` (隨機性)、`prompt` (輸入)、`completion` (輸出)、`token` (字詞)。
 
-![LLM-powered-agent-anatomy](https://pbs.twimg.com/media/GI9MhXOXsAAJUS4?format=png&name=medium)
-Reference: [E2B.dev, Cloud Runtime for AI Agents](https://x.com/tereza_tizkova/status/1769728977529197018/photo/1)<br>
+> ![LLM-powered-agent-anatomy](https://pbs.twimg.com/media/GI9MhXOXsAAJUS4?format=png&name=medium)
+> Reference: [E2B.dev, Cloud Runtime for AI Agents](https://x.com/tereza_tizkova/status/1769728977529197018/photo/1)
 
 - 以《快思慢想》來比喻，LLM 擅長記憶背誦，但不擅長邏輯推理。
     - [快思慢想 Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) 為 2002 年諾貝爾經濟學獎得主 Daniel Kahneman 於 2011 年出版的暢銷書。
@@ -46,8 +46,8 @@ Reference: [E2B.dev, Cloud Runtime for AI Agents](https://x.com/tereza_tizkova/s
 - 類神經網路 = 用數學模型模仿人類大腦的結構
 - 深度學習 = 以類神經網路為架構，對資料做「維度轉換 / 特徵學習 / `Kernel Method`」的演算法
 
-![](https://www.mdpi.com/information/information-14-00345/article_deploy/html/images/information-14-00345-g001.png)
-Reference: [Artificial Intelligence & Data Science interactions.](https://www.mdpi.com/2078-2489/14/6/345)<br>
+>![](https://www.mdpi.com/information/information-14-00345/article_deploy/html/images/information-14-00345-g001.png)
+> Reference: [Artificial Intelligence & Data Science interactions.](https://www.mdpi.com/2078-2489/14/6/345)
 
 - AlphaGo v.s. GhatGPT
     - AlphaGo 和 GhatGPT 都是深度學習。
@@ -70,11 +70,11 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
     - 當模型規模達到某個閾值時，模型對某些問題的處理性能呈現快速增長。
     - 有愈多的資料量，就會有愈多的參數量，模型結果就會愈準確。
 
-    ![Emergent-Abilities-of-Large-Language-Models](images/Emergent-Abilities-of-Large-Language-Models.png)
-    Reference: [Emergent Abilities of Large Language Models](https://openreview.net/pdf?id=yzkSU5zdwD)
+    >![Emergent-Abilities-of-Large-Language-Models](images/Emergent-Abilities-of-Large-Language-Models.png)
+    > Reference: [Emergent Abilities of Large Language Models](https://openreview.net/pdf?id=yzkSU5zdwD)
 
-    ![Emergent-Properties](https://www.datanami.com/wp-content/uploads/2023/02/Emergent_Properties.png)
-    Reference: [Like ChatGPT? You Haven’t Seen Anything Yet](https://www.datanami.com/2023/02/03/like-chatgpt-you-havent-seen-anything-yet/)
+    >![Emergent-Properties](https://www.datanami.com/wp-content/uploads/2023/02/Emergent_Properties.png)
+    > Reference: [Like ChatGPT? You Haven’t Seen Anything Yet](https://www.datanami.com/2023/02/03/like-chatgpt-you-havent-seen-anything-yet/)
 
 - History of Natural Language Processing.
     - Word2Vec >> Transformers >> BERT >> ChatGPT ...
@@ -91,7 +91,7 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
 - Kill Application? ChatGPT.
 
 
-## OpenAI ChatGPT API
+## OpenAI ChatGPT
 - ChatGPT 是用於「聊天」的生成式語言模型。
 - ChatGPT 三大特性：
     - 隨機：
@@ -105,6 +105,17 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
         - 但它可能會胡說八道，生成看似合理但實際上不準確或錯誤的信息。
         - 當它無法正確理解上下文、常識或時事，可能會導致不合適或不相關的回答。
 
+- ChatGPT 角色架構：
+    - System Role
+        - The system role sets the behavior of the assistant.
+        - 幫助 User 把需求說清楚，描述 Assistant 所要扮演的特性，包含「背景、角色、條件、限制」。
+    - Assistant Role
+        - ChatGPT (LLM) receives the prompt and returns the completions.
+        - 就是 AI，就是 ChatGPT。
+    - User Role
+        - The user (You) sends the prompts and receives the completions.
+        - 就是我們。
+
 - 提示工程 Prompt Engineering?
     - 是一種透過設計、引導、改進、優化的方式來提升 AI 產生出來的結果，使其更加的準確且可靠的執行任務。
     - 簡言之，就是「做出好的提問」。
@@ -113,88 +124,82 @@ Reference: [Artificial Intelligence & Data Science interactions.](https://www.md
     - 是從資料中學習規則的黑盒子。
     - 黑盒子內部是基於數學所構建出來的算法。
 
-- ChatGPT 角色架構：
-    - System role
-        - The system role sets the behavior of the assistant.
-        - 幫助 User 把需求說清楚，描述 Assistant 所要扮演的特性，包含「背景、角色、條件、限制」。
-    - Assistant role
-        - ChatGPT (LLM) receives the prompt and returns the completions.
-        - 就是 AI，就是 ChatGPT。
-    - User role
-        - The user (You) sends the prompts and receives the completions.
-        - 就是我們。
-
-- Token
-    - Token 通常指的是文字處理過程中的最小單位。
-    - Token 是模型視角中的單字，可以是字符、詞語、片語、句子或其他較小的文字單元，取決於模型的設計。
-    - Tokenization 是將一段連續的文字序列拆分為 Token 的過程。
-
-    ![Characters-to-Tokens](https://www.baeldung.com/wp-content/uploads/sites/4/2023/07/chatgpt_token.png)<br>
-    Reference: [How Does ChatGPT Work?](https://www.baeldung.com/cs/chatgpt-model)
-
-- Embedding
-    - Embedding 是將離散的文字資料轉換為連續的、低維度向量。
-    - Embedding 是把人類的語言轉換成電腦看得懂的語言或意思。
-
-    ![Tokenization-and-embeddings](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*dYldmhgBOXv_g1cB.png)<br>
-    Reference: [Unveiling the Secrets of ChatGPT: How Embeddings Revolutionize AI Language Understanding](https://jeremyjouvance.medium.com/unveiling-the-secrets-of-chatgpt-how-embeddings-revolutionize-ai-language-understanding-cf46b7c49963)
-
 - LLM 優化技法?
     - Prompt Engineering >> RAG >> Fine-tuning >> Train from Scratch
 
-    Reference: [大模型最佳化：RAG還是微調？](https://cloud.baidu.com/qianfandev/topic/267714)
-
-    ![prompt-BRTR](https://chatgptprompt.cc/wp-content/uploads/2023/07/3_640wx_fmtpngampwxfrom5ampwx_lazy1ampwx_co1.png)
-    Reference: [ChatGPT 任務指令萬能模板](https://chatgptprompt.cc/666.html)
-    ![ChatGPT-Optimization](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F9341931a-53f0-48e1-b026-0f1ad17b457c%2Ff39a3306-6c44-4569-b8fe-28eae07fe4d2%2FUntitled.png?table=block&id=a2375486-e109-4418-b4ab-a31458063d13&t=a2375486-e109-4418-b4ab-a31458063d13&width=912&cache=v2)
-    Reference: [如何優化 LLM 的效果](https://www.breezedeus.com/article/make-llm-greater)
-
-- 傳送門
-    - [ChatGPT API Introduction](https://platform.openai.com/docs/api-reference/introduction)
-    - [ChatGPT API Example](https://platform.openai.com/docs/quickstart?context=python)
-    - [ChatGPT API Playground](https://platform.openai.com/playground?mode=chat)
-    - [ChatGPT API Tokenizer](https://platform.openai.com/tokenizer)
+    >![ChatGPT-Optimization](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F9341931a-53f0-48e1-b026-0f1ad17b457c%2Ff39a3306-6c44-4569-b8fe-28eae07fe4d2%2FUntitled.png?table=block&id=a2375486-e109-4418-b4ab-a31458063d13&t=a2375486-e109-4418-b4ab-a31458063d13&width=912&cache=v2)<br>
+    > Reference: [如何優化 LLM 的效果](https://www.breezedeus.com/article/make-llm-greater);
+    > [大模型最佳化：RAG還是微調？](https://cloud.baidu.com/qianfandev/topic/267714);
+    > [ChatGPT 任務指令萬能模板](https://chatgptprompt.cc/666.html)
 
 
 ## LangChain Framework
 -  Library, Framework and Platform?
     - The conclusion is that your code calls the library, but the framework calls your code.
-    ![Framework-vs-Libraries](https://kobaltsolutions.com/wp-content/uploads/2021/02/YOUR-CODE.png)
-    ![architecture-framework-libraries](https://tom.lokhorst.eu/media/architecture-framework-libraries.png)
-    Reference: [Why Libraries are better than Frameworks](https://tom.lokhorst.eu/2010/09/why-libraries-are-better-than-frameworks)
+    > ![Framework-vs-Libraries](https://kobaltsolutions.com/wp-content/uploads/2021/02/YOUR-CODE.png)
+    > Reference: [Why Libraries are better than Frameworks](https://tom.lokhorst.eu/2010/09/why-libraries-are-better-than-frameworks)
 
 - What is LangChain 🐦🔗?
     - LangChain 是一個應用框架，旨在簡化使用大型語言模型的應用程式。
     - LangChain 提供一個標準接口，用於將不同的語言模型（LLM）連接在一起，以及與其他工具和數據源的集成。
-    ![Langchain-Modules](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*WeC1gMrYurp1JAEw.png)
-    Reference: [What is the LangChain Framework? + Example](https://firstfinger.medium.com/what-is-langchain-framework-example-2ece7242127d)
+    >![Langchain-Modules](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*WeC1gMrYurp1JAEw.png)
+    > Reference: [What is the LangChain Framework? + Example](https://firstfinger.medium.com/what-is-langchain-framework-example-2ece7242127d)
     ![LangChain-features-at-a-glance](images/LangChain-features-at-a-glance.png)
-    Reference: [Using LangChain for Large Language Model — Powered Applications](https://www.packtpub.com/article-hub/using-langchain-for-large-language-model-powered-applications)
+    > Reference: [Using LangChain for Large Language Model — Powered Applications](https://www.packtpub.com/article-hub/using-langchain-for-large-language-model-powered-applications)
     ![Sequential-Chains](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*AM_RBNFv97Px365uO7nJfw.png)
-    Reference: [LangChain: An overview](https://pub.aimind.so/langchain-all-you-need-to-know-beadc2c93323)
+    > Reference: [LangChain: An overview](https://pub.aimind.so/langchain-all-you-need-to-know-beadc2c93323)
+
+- LangChain 的優缺點：
+    - 物件導向設計模式。
+    - 整合多個語言模型，便於多個 LLM 相互協作或替換，如 OpenAI, Azure OpenAI, Hugging Face, Google Generative AI ... 等。
+    - 強大的工具支持，提供原 OpenAI 沒有的功能，如 PromptTemplate, Agents, Retrievers ... 等。<br>
+      但現在都已經被整合到 LLM 裡面了，如 ...
+      - PromptTemplate 被 [Message roles (system, user, or assistant)](https://platform.openai.com/docs/guides/chat-completions/message-roles) 取代。
+      - Agents 被 [Function Calling](https://platform.openai.com/docs/guides/function-calling) 取代。
+      - Retrievers 被 [Assistants API](https://platform.openai.com/docs/assistants/overview) 取代。
 
 
-## Embeddings & Vector Database
-- Embeddings
-- 向量資料庫 Vector Database
-    - 在本地端做特徵工程建向量資料庫，本身就是一種 RAG 的展現方式。
-    ![Vector-database-Timeline](https://thedataquarry.com/posts/vector-db-1/vector-db-timeline.png)
-    Reference: [Vector databases: What makes each one different?](https://thedataquarry.com/posts/vector-db-1/)
+## Token
+- Token 通常指的是文字處理過程中的最小單位。
+- Token 是模型視角中的單字，可以是字符、詞語、片語、句子或其他較小的文字單元，取決於模型的設計。
+- Tokenization 是將一段連續的文字序列拆分為 Token 的過程。
+
+> ![Characters-to-Tokens](https://www.baeldung.com/wp-content/uploads/sites/4/2023/07/chatgpt_token.png)<br>
+> Reference: [How Does ChatGPT Work?](https://www.baeldung.com/cs/chatgpt-model)
 
 
-## Retrieval-Augmented Generation, RAG
-![RAG-flow](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*_9cWD_b19BWc4kdH-M0GOQ.png)
-Reference: [The Agents of AI: Data Analysis with LLMs and LangChain Agents](https://ashukumar27.medium.com/the-agents-of-ai-1402548e9b8c)
+## Embeddings
+- Embedding 是將離散的文字資料轉換為連續的、低維度向量。
+- Embedding 是把人類的語言轉換成電腦看得懂的語言或意思。
+
+> ![Tokenization-and-embeddings](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*dYldmhgBOXv_g1cB.png)<br>
+> Reference: [Unveiling the Secrets of ChatGPT: How Embeddings Revolutionize AI Language Understanding](https://jeremyjouvance.medium.com/unveiling-the-secrets-of-chatgpt-how-embeddings-revolutionize-ai-language-understanding-cf46b7c49963)
+
+
+## Vector Database
+- 在本地端做特徵工程建向量資料庫，本身就是一種 RAG 的展現方式。
+>![Vector-database-Timeline](https://thedataquarry.com/posts/vector-db-1/vector-db-timeline.png)
+> Reference: [Vector databases: What makes each one different?](https://thedataquarry.com/posts/vector-db-1/)
+
+
+## Retrieval-Augmented Generation (RAG)
+>![RAG-flow](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*_9cWD_b19BWc4kdH-M0GOQ.png)
+> Reference: [The Agents of AI: Data Analysis with LLMs and LangChain Agents](https://ashukumar27.medium.com/the-agents-of-ai-1402548e9b8c)
 
 
 ## Function Calling
-![Function-Calling-flow](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DyzVPezowuNs8UaP0fjgmw.png)
-Reference: [Open AI function calling for Chat Completion](https://medium.com/@chamathka3deemanthi/open-ai-function-calling-for-chat-completion-f9a4b85ff457)
-Reference: [Function Calling: Integrate Your GPT Chatbot With Anything](https://semaphoreci.com/blog/function-calling)
+>![Function-Calling-flow](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DyzVPezowuNs8UaP0fjgmw.png)
+> Reference: [Open AI function calling for Chat Completion](https://medium.com/@chamathka3deemanthi/open-ai-function-calling-for-chat-completion-f9a4b85ff457);
+> [Function Calling: Integrate Your GPT Chatbot With Anything](https://semaphoreci.com/blog/function-calling)
 
 
+## ChatGPT API 傳送門
+- [ChatGPT API Introduction](https://platform.openai.com/docs/api-reference/introduction)
+- [ChatGPT API Example](https://platform.openai.com/docs/quickstart?context=python)
+- [ChatGPT API Playground](https://platform.openai.com/playground?mode=chat)
+- [ChatGPT API Tokenizer](https://platform.openai.com/tokenizer)
 
-## 範例程式
+## Sample Code 傳送門
 - [01_openai_libs](codes/01_openai_libs.ipynb): test OpenAI Python library
 - [02_chatgpt_api](codes/02_chatgpt_api.ipynb): integrate ChatGPT API
 - [03_chatgpt_with_chatbot](codes/03_chatgpt_with_chatbot.ipynb): integrate ChatGPT into Chatbot
