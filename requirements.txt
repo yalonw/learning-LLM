@@ -27,3 +27,6 @@ numexpr
 # for chatbot
 Flask
 line-bot-sdk
+
+# for media
+pytubefix
